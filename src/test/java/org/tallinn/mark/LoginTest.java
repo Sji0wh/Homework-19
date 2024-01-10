@@ -73,7 +73,7 @@ public void setUp() {
         //Error checking using a minimum number of characters (2 scenario)
         @Test
         public void insertAMinimumNumberOfTwoCharactersInLogin() {
-                loginPage.login.sendKeys("1");
+                loginPage.login.sendKeys("2");
                 loginPage.password.sendKeys("12");
                 loginPage.usernameInputError.shouldBe(Condition.exist, visible);
         }
