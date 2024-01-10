@@ -70,9 +70,9 @@ public void setUp() {
                 orderPage.orderButton.shouldBe(Condition.exist, visible);
         }
 
-        //Error checking using a minimum number of characters (2 scenario)
+        //Error checking using a minimum number of characters
         @Test
-        public void insertAMinimumNumberOfTwoCharactersInLogin() {
+        public void insertMinCredentials() {
                 loginPage.login.sendKeys("2");
                 loginPage.password.sendKeys("12");
                 loginPage.usernameInputError.shouldBe(Condition.exist, visible);
